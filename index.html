@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    
+    .section1 {
+      background-image: url(./sec1bg.jpg);
+      height: 70vh;
+      width: 100vw;
+      position: relative;
+      color: aliceblue;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-around;
+      gap: 10px;
+    }
+
+    .header h2 {
+      display: inline;
+    }
+
+    .nav {
+      display: flex;
+      gap: 50px;
+    }
+
+    #searchbar {
+      margin-top: 15px;
+      border: 2px solid white;
+      background-color: aliceblue;
+      height: 15px;
+      color: rgb(15, 210, 106)
+    }
+
+    .subsec {
+      display: flex;
+      width: 100%;
+      /* margin: 0px; */
+    }
+
+    .arrows {
+      justify-self: center;
+      align-self: center;
+      width: 30vw;
+
+    }
+
+    .arrow2 {
+      justify-self:center;
+      align-self:center;
+      margin-left: 50%;
+    }
+
+    .text {
+      justify-self: center;
+      align-self: center;
+      margin-left: 90px;
+
+    }
+
+    #downarrow {
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      font-size:x-large;
+      background-color: rgb(37, 190, 109);
+      border-radius: 100%;
+      color: aliceblue;
+
+    }
+
+    .section2 {
+      height: 100%;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: left;
+    }
+
+    .subsec2 {
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+
+    }
+
+    .icons1 {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto;
+      width: 40%;
+      row-gap: 10px;
+      column-gap: 10px;
+    }
+
+    .icons1 img {
+      width: 50px;
+      display: inline;
+    }
+
+    .icons1 div {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+    }
+
+    #button {
+      border: 2px solid;
+      color: aliceblue;
+      background-color: rgb(123, 217, 123);
+      width: 10vw;
+      border-radius: 100px;
+      text-align: center;
+      padding-top: 10px;
+    }
+
+    .sec2text {
+      padding: 60px;
+      width: 60%;
+      height: 100%;
+      align-self: baseline;
+
+    }
+
+    .section3 {
+      display: flex;
+      justify-content: space-evenly;
+      height: 100%;
+      width: 100%;
+    }
+
+    .flexitem1,
+    .flexitem2,
+    .flexitem3 {
+      display: flex;
+    }
+
+    .section3 img {
+      width: 20px;
+      height: 40px;
+      padding: 5%;
+    }
+
+    .section4 {
+      background-image: url(./sec1bg.jpg);
+      height: 50vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      /* when i use grid the alignment is not perfect why */
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+
+    #head {
+      font-size: 200%;
+      font-style: bold;
+      padding-bottom: 2%;
+    }
+
+    .sec4text {
+      margin-top: 0%;
+      padding-bottom: 2%;
+    }
+
+    #footer1 {
+      border: 2px solid;
+      border-radius: 100px;
+      padding-right: 200px;
+      text-align: start;
+    }
+
+    #footer2 {
+      border-radius: 150px;
+      background-color: white;
+      color: rgb(123, 233, 123);
+      padding: 5px;
+      font-size: 10px;
+    }
+
+   
+
+    .flexcontainer {
+      display: flex;
+      justify-content: space-around;
+      padding: 5%;
+      gap: 20%;
+    }
+
+    .flexbox2 {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      gap: 3%;
+    }
+
+    .section6 {
+      background-image: url(./slide-03\ \(1\).jpg);
+      height: 100vh;
+      width: 100vw;
+      color: white;
+      padding-top: 5%;
+    }
+
+    .sec6flexbox1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .sec6flexbox2 {
+      display: flex;
+      justify-content: space-around;
+      margin-left: 10%;
+      margin-right: 10%;
+
+    }
+
+    .sec6footer {
+      display: flex;
+      justify-content: center;
+      gap: 1%;
+      color: aliceblue;
+    }
+
+    #circle1 {
+      border: 2px solid white;
+      background-color: aliceblue;
+      border-radius: 3px;
+      width: 3px;
+      height: 3px;
+    }
+
+    #circle2 {
+      border: 2px solid white;
+      background-color: aliceblue;
+      border-radius: 4px;
+      width: 4px;
+      height: 4px;
+    }
+
+    .section7 {
+      background-image: url(./dotted-map-bg.png);
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .sec7flexbox {
+      display: flex;
+
+    }
+
+    .sec7icons {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-row: auto auto;
+      row-gap: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .sec7flexbox2 {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      margin: 60px;
+    }
+
+    input {
+      margin: 20px;
+       padding: 10px 10px; 
+    }
+    .section8 {
+      background-image: url(./slide-01.jpg);
+      width: 100vw;
+      height: 30vh;
+
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      color: aliceblue;
+    }
+
+    .footertext1,
+    .footertext2 {
+      margin: 5%;
+    }
+
+   .footertext2 i {
+      padding: 5px;
+      color:white;
+    }
+     .button{
+      display:flex;
+    } 
+    @media screen and (max-width:480px) {
+      .section1 {
+      background-image: url(./sec1bg.jpg);
+      position: relative;
+      color: aliceblue;
+    }
+    .button{
+      display: inline;
+    }
+    .arrow2{
+      margin-left: 20%;
+    }
+     #downarrow{
+      display: none;
+     }
+      .nav {
+        display: none;
+      
+      }
+
+      .icons1{
+        display: block;
+         width: 80%;
+            }
+            .text span{
+              display: block;
+            }
+            .sec2text{
+              width: 20%;
+              height: 50%;
+            }
+             #button
+            {
+              width: 70%;
+
+            }
+      .section3{
+        display: block;
+
+      }  
+      .flexcontainer{
+        display: block;
+      }
+      .flexbox2{
+        display: block;
+
+      }   
+        .section6 {
+      background-image: url(./slide-03\ \(1\).jpg);
+      height: 100%;
+      width: 100%;
+      color: white;
+      padding-top: 5%;
+    }
+     .sec6flexbox2 img{
+       width: 100%;
+       height: 100%;
+     }
+      .sec6flexbox2{
+        display: block;
+      } 
+      .section7{
+        background-image: url(./dotted-map-bg.png);
+      width: 100%;
+      height: 100%;
+      }
+      .sec7flexbox{
+        display: block;
+      }
+      .sec7flexbox2{
+        display:block;
+      }
+      textarea{
+        width: 100%;
+        height: 100%;
+      }
+        .section8 {
+      background-image: url(./slide-01.jpg);
+      width: 100vw;
+      height: 30vh;
+
+    }
+      .footertext2 i{
+        display: block;
+      }
+    }
+  @media screen and (min-width:481px) and (max-width:768px){
+    .section1{
+        background-image: url(./sec1bg.jpg);
+      height: 50vh;
+      width: 100vw;
+      position: relative;
+      color: aliceblue;
+      
+    }
+  
+    .subsec{
+       margin-top: 50px;
+
+    }
+    .text{
+      position: absolute;
+      left: 30%;
+    }
+    .arrow2{
+      margin-left:90% ;
+    }
+            #button
+            {
+              width: 80%;
+
+            }
+         .takeaction{
+          display: block;
+         }   
+     .section4{
+      padding-top: 10%;
+      padding-bottom: 10%;
+     }  
+    .section6 {
+      background-image: url(./slide-03\ \(1\).jpg);
+      height: 80%;
+      width: 100%;
+      color: white;
+       padding-top: 5%; 
+    }
+   .sec6flexbox2 img{
+    height: 80%;
+    width: 80%;
+   }
+   .flexbox2 img {
+    width: 100%;
+    height: 100%;
+      
+   }
+   .sec7flexbox2{
+    display: inline;
+   }
+  
+    input{
+      display: inline;
+    }
+  } 
+  @media screen and (min-width:769px){
+     .subsec{
+      margin-top: 180px;
+     }
+     .text{
+      position: absolute;
+      left: 30%;
+    }
+    #downarrow{
+        left: 45%;
+    }
+    .arrow2{
+      margin-left: 90%;
+    } 
+    .flexbox2 img {
+    width: 100%;
+    height: 100%;
+      
+   }
+    .section6 {
+      background-image: url(./slide-03\ \(1\).jpg);
+      height: 80%;
+      width: 100%;
+      color: white;
+       padding-top: 5%; 
+    }
+    .sec6flexbox2 img{
+    height: 80%;
+    width: 80%;
+   }
+  }
+  </style>
+</head>
+
+<body>
+  
+  <section class="section1">
+    <div class="header">
+      <h2>.BREEZED</h2>
+      <div class="nav">
+        <p>HOME</p>
+        <p>ABOUT</p>
+        <p>PROJECTS</p>
+        <p>DROP DOWN<i class="fa-solid fa-angle-down"></i></p>
+        <p>CONTACT US</p>
+        <i id="searchbar" class="fa-solid fa-magnifying-glass"></i>
+      </div>
+    </div>
+    <div class="subsec">
+      <div class="arrows arrow1"><img src="./prev.png" alt="previous arrow"> </div>
+      <div class="text">
+        <h5>INTEGRATED MARKETING MEDIA</h5>
+        <h3 style="font-family: Arial, Helvetica, sans-serif;">Best Degital Marketing</h3>
+        <div class="button">
+        <span style=" border: 2px solid; border-radius: 20px; font-family: monospace; padding:10px;">READ MORE</span>
+        <span
+          style="border: 2px solid; border-radius: 20px; background-color: aliceblue; color:greenyellow; padding:10px;font-family: monospace;" class="takeaction">TAKE
+          ACTION</span>
+        </div>
+      </div>
+      <div class="arrow2"><img src="./next.png" alt="next arrow"></div>
+    </div>
+    <i id="downarrow" class="fa-solid fa-arrow-down"></i>
+  </section>
+  <section class="section2">
+    <div class="subsec2">
+      <p style="color: rgb(101, 223, 182)">ABOUT US</p>
+      <h2>We work with top brands and startups</h2>
+      <div class="icons1">
+        <div>
+          <img src="./service-item-01.png" alt="rocketicon" /><span>TOP NOTCH</span>
+        </div>
+        <div>
+          <img src="./service-item-01.png" alt="rocketicon" /><span>ROBUST</span>
+        </div>
+        <div>
+          <img src="./contact-info-03.png" alt="rocketicon" /><span>RELIABLE</span>
+        </div>
+        <div><img src="./contact-info-03.png" /><span class="span">UP-TO-DATE</span></div>
+        <p id="button">learn more <i class="fa-solid fa-arrow-right"></i></p>
+      </div>
+    </div>
+    <div class="sec2text">
+      <p>
+        <strong style="color: blue"> Breezed html template</strong>is provided
+        by TemplateMo for absolutely free of charge. You can download,edit and
+        use this for your non-commercial websites.
+      </p>
+      <p>
+        Redistributing this template as a downloadable ZIP file on any
+        template collection website is strictly prohibited.you can need to
+        talk to us if you want to distribute this template.Thank You.
+      </p>
+      <p>
+        This is Bootstrap V<sub>4.3.1</sub>CSS layout.Do you like it? You can
+        feel free to <strong style="color: blue">talk to us</strong> if you
+        have anything.
+      </p>
+    </div>
+  </section>
+  <hr>
+  <section class="section3">
+    <div class="flexitem1">
+      <img src="./features-icon-1.png" alt="sec3rocketimg" />
+      <p>
+        <strong>INITIAL WORK</strong><br />proin euismod semut diam
+        ultricies.<br />Ut faucibus velit ultricies.Nam euturpis <br />
+        quam.Duis ac condimentum eros.<br /><strong>LEARN MORE<i class="fa-solid fa-arrow-right"></i></strong>
+      </p>
+    </div>
+    <div class="flexitem2">
+      <img src="./features-icon-1.png" alt="sec3rocketimg" />
+      <p>
+        <strong>MASTER PLANNING</strong><br />proin euismod semut diam
+        ultricies.<br />Ut faucibus velit ultricies.Nam euturpis<br />
+        quam.Duis ac condimentum eros.<br /><strong>LEARN MORE<i class="fa-solid fa-arrow-right"></i></strong>
+      </p>
+    </div>
+    <div class="flexitem3">
+      <img src="features-icon-1.png" alt="sec3rocketimg" />
+      <p>
+        <strong>SMOOTH EXECUTION</strong><br />proin euismod semut diam
+        ultricies.<br />Ut faucibus velit ultricies.Nam euturpis<br />
+        quam.Duis ac condimentum eros.<br /><strong>LEARN MORE<i class="fa-solid fa-arrow-right"></i></strong>
+      </p>
+    </div>
+  </section>
+  <section class="section4">
+    <p>SUBSCRIBE NEWLIFELETTERS</p>
+    <span id="head">Don't miss this chance</span>
+    <p class="body">
+      Vivamus suscipit nibh.incursus mi.proin vel blandit metus.et autor
+      elit.Vivamus tincident</p>
+    <p class="sec4text"> tristique convallis.Ut necodio vel arcu euisod semper nec ac sem.</p>
+    <div class="footer">
+      <span id="footer1">enter your email....</span>
+      <span id="footer2">SUBSCRIBE NOW</span>
+    </div>
+  </section>
+  <section class="section5">
+    <div class="flexcontainer">
+      <div class="flexbox1">
+        <p style="color: rgb(85, 182, 85);">OUR PROJECTS</p>
+        <span style="font-size: 30px;font-weight: bold;">Some of our<br> latest Projects</span>
+        <p style="color: rgb(85, 182, 85);">ALL</p>
+        <p>WEB DESIGN</p>
+        <p>WEB DEVELOPMENT</p>
+        <p>GRAPHICS</p>
+        <p>ART WORKS</p>
+      </div>
+      <div class="flexbox2">
+        <img src="./sec5-img1.jpg" alt="man">
+        <img src="./sec5-img2.jpg" alt="planewing">
+        <img src="./sec5-img3.jpg" alt="riverbank">
+        <img src="./sec5-img4.jpg" alt="sittingman">
+        <img src="./sec5-img5.jpg" alt="">
+        <img src="./sec5-img6.jpg" alt="photographer">
+      </div>
+    </div>
+  </section>
+  <section class="section6">
+    <div class="sec6flexcontainer">
+      <div class="sec6flexbox1">
+        <p>DIGITAL TEAM</p>
+        <p style="font-size:30px;">Young and talented members</p>
+      </div>
+      <div class="sec6flexbox2">
+        <div><img src="./sec6-member1.jpg" alt="lady">
+          <p style="text-align: center;">.07 OLIVA SOFIE</p>
+          <p style="text-align: center; font-size: 11px;">WEBSITE ANALYIST</p>
+        </div>
+        <div><img src="./sec6-member2.jpg" alt="man">
+          <p style="text-align: center;">.01 WHITE CHEESE</p>
+          <p style="text-align: center; font-size: 11px;">DIGITAL MARKETER</p>
+        </div>
+        <div><img src="./sec6-member3.jpg" alt="lady">
+          <p style="text-align: center;">.02 SNOW MARY</p>
+          <p style="text-align: center; font-size: 11px;">SITE ANALYST</p>
+        </div>
+      </div>
+      <div class="sec6footer">
+        <p id="circle1"></p>
+        <p id="circle1"></p>
+        <p id="circle2"></p>
+      </div>
+    </div>
+  </section>
+  <section class="section7">
+    <div class="sec7flexbox">
+      <div class="sec7flexbox1">
+        <p style="color: rgb(85, 182, 85);">CONTACT US</p>
+        <span style="font-weight: bold;font-size:35px;">Feel free to keep in<br> touch with us!</span><br>
+        <div class="sec7icons">
+          <img src="./contact-info-01.png" alt="calling image"><span>010-020-0860</span>
+          <img src="./contact-info-02.png" alt="email image"><span>info@company.com</span>
+          <img src="./contact-info-03.png" alt=""><span>www.company.com</span>
+        </div>
+      </div>
+      <div class="sec7flexbox2">
+        <form>
+            <input id="name" type="text" name="name" placeholder="your name">
+            <input id="phone" type="text" name="phone" placeholder="your phone">
+            <br>
+            <input id="email" type="text" name="email" placeholder="your email">
+            <input id="subject"  type="text" name="subject" placeholder="subject">
+          <br>
+            <textarea id="Message" placeholder="Message" rows="10" cols="65"></textarea>
+          <p
+            style="background-color: forestgreen;border-radius:100px; width:200px;height:30px; color: white;padding-top:15px; font-size: 11px;text-align: center;">
+            SEND MESSAGE NOW<i class="fa-solid fa-arrow-right"></i></p>
+        </form>
+      </div>
+    </div>
+  </section>
+  <section class="section8">
+    <div class="footer">
+      <div class="footertext1">
+        <p>Copy right 2020 Breezed Co.Ltd.-Design TemplateMo</p>
+      </div>
+      <div class="footertext2">
+        <p>FOLLOW US<a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></a></i><a href="https://twitter.fileplanet.com/apk"><i class="fa-brands fa-square-twitter"></i></a><a href="https://www.linkedin.com/login"><i
+       class="fa-brands fa-linkedin"></a></i><i class="fa-solid fa-globe"></i></p>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
